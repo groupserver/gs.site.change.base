@@ -1,0 +1,31 @@
+<html metal:use-macro="context/@@groupserver_site_home_layout/page">
+  <head>
+    <title metal:fill-slot="title">
+      Change Site:
+      <span tal:replace="view/siteInfo/name"/>
+    </title>
+  </head>
+  <body>
+    <tal:block metal:fill-slot="contextnavigation">&#160;</tal:block>
+    <div id="gs-site-change" metal:fill-slot="body">
+        <h1>Change <span tal:replace="view/siteInfo/name"/></h1>
+        <ul>
+          <li><a href="/admin_change_name.html">Change the 
+            <strong>name</strong></a></li>
+          <li><a href="/admin_change_tz.html">Change the
+            default <strong>timezone</strong></a></li>
+          <li>Change the <strong>homepage</strong>
+            <ul>
+              <li><a href="/change_greeting.html">Change the
+                <strong>greeting</strong></a> that is shown to people
+                who are logged in.</li>
+              <li><a href="/admin_changeintro.html">Change the
+                <strong>introduction</strong></a> that is shown on
+                the homepage.</li>
+            </ul>
+          </li>
+        </ul>
+    </div><!--gs-gs-site-change-->
+  </body>
+</html>
+
