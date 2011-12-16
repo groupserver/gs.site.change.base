@@ -1,0 +1,8 @@
+<ul id="gs-site-change-base-adminstuff-adminlinks-manager">
+  <tal:block repeat="viewlet options/viewlets">
+    <tal:block content="structure viewlet/render">
+      Some links
+    </tal:block>
+  </tal:block>
+</ul>
+

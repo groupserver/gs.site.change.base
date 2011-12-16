@@ -4,12 +4,64 @@
   xmlns:five="http://namespaces.zope.org/five"
   i18n_domain="groupserver">
   
+  <!--  It is almost Christmas, so I am using a trifle as a metaphor 
+    -   for the site admin page. -->
+  <!-- It is structured a bit like this:
+    - ┌─ #gs-site-change ─────────────────────────────────────────┐
+    - │┌─ #gs-site-change-base-adminstuff ───────────────────────┐│
+    - ││    Some very fancy admin stuff, that is beyond a simple ││
+    - ││    link.                                                ││
+    - ││┌─ #gs-site-change-base-adminstuff-adminlinks ──────────┐││
+    - │││┌─ #gs-site-change-base-adminstuff-adminlinks-manager ┐│││
+    - ││││   A bunch of link provided by                       ││││
+    - ││││   some external modules that                        ││││
+    - ││││   we do not know about.                             ││││
+    - │││└─────────────────────────────────────────────────────┘│││
+    - ││└───────────────────────────────────────────────────────┘││
+    - │└─────────────────────────────────────────────────────────┘│
+    - └───────────────────────────────────────────────────────────┘ 
+  -->
+
+  <!--  #gs-site-change: A page.
+    -   The spongy base is a simple page template. You have to be an 
+    -   administrator to view it. -->  
   <browser:page 
     for="Products.GSContent.interfaces.IGSSiteFolder"
     name="admindivision"
     class="Products.GSContent.view.GSContentView"
     template="browser/templates/admindivision.pt"
     permission="zope2.ManageProperties"/>
+
+  <!--  #gs-site-change-base-adminstuff: A viewlet manager.
+    -   The thin jammy layer of a viewlet manager to hold the 
+    -   high-level administrator tasks. -->
+  <browser:viewletManager
+    name="groupserver.SiteAdminStuff"
+    permission="zope2.ManageProperties"
+    provides=".interfaces.ISiteAdminStuff"
+    class="gs.viewlet.manager.WeightOrderedViewletManager"
+    template="browser/templates/adminstuff.pt"/>
+
+  <!--  #gs-site-change-base-adminstuff-adminlinks: A viewlet.
+    -   Then the fruity layer of a viewlet that slots into the above 
+    -   viewlet manage and, in turn, will hold… -->
+  <browser:viewlet name="gs-site-change-base-adminstuff-adminlinks"
+    manager=".interfaces.ISiteAdminStuff"
+    template="browser/templates/adminlinks.pt"
+    class="gs.viewlet.viewlet.SiteViewlet"
+    permission="zope2.ManageProperties"
+    weight="1"
+    title="Links" />
+
+  <!--  #gs-site-change-base-adminstuff-adminlinks-manager: A viewlet mgr
+    -   The creamy topping of the site administration links. Most 
+    -   modules will simply add stuff to this. -->
+  <browser:viewletManager
+    name="groupserver.SiteAdminLinks"
+    permission="zope2.ManageProperties"
+    provides=".interfaces.ISiteAdminLinks"
+    class="gs.viewlet.manager.WeightOrderedViewletManager"
+    template="browser/templates/adminlinksmanager.pt"/>
 
 </configure>
 
