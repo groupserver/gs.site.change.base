@@ -8,17 +8,27 @@
     -   for the site admin page. -->
   <!-- It is structured a bit like this:
     - ┌─ #gs-site-change ─────────────────────────────────────────┐
+    - │                                                           │
     - │┌─ #gs-site-change-base-adminstuff ───────────────────────┐│
+    - ││                                                         ││
     - ││    Some very fancy admin stuff, that is beyond a simple ││
     - ││    link.                                                ││
+    - ││                                                         ││
     - ││┌─ #gs-site-change-base-adminstuff-adminlinks ──────────┐││
+    - │││                                                       │││
+    - │││    A viewlet to provide the simple links.             │││
+    - │││                                                       │││
     - │││┌─ #gs-site-change-base-adminstuff-adminlinks-manager ┐│││
-    - ││││   A bunch of link provided by                       ││││
-    - ││││   some external modules that                        ││││
-    - ││││   we do not know about.                             ││││
+    - ││││                                                     ││││
+    - ││││    A bunch of links provided by some external       ││││
+    - ││││    modules that we do not know about.               ││││
+    - ││││                                                     ││││
     - │││└─────────────────────────────────────────────────────┘│││
+    - │││                                                       │││
     - ││└───────────────────────────────────────────────────────┘││
+    - ││                                                         ││
     - │└─────────────────────────────────────────────────────────┘│
+    - │                                                           │
     - └───────────────────────────────────────────────────────────┘ 
   -->
 
