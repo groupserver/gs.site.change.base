@@ -73,6 +73,7 @@
     class="gs.viewlet.manager.WeightOrderedViewletManager"
     template="browser/templates/adminlinksmanager.pt"/>
 
+  <!-- Finally, the viewlet for the site homepage. -->
   <browser:viewlet 
     name="gs-site-change-base-site-home-admin"
     manager="gs.site.home.interfaces.ISiteHomeLeftColumn"

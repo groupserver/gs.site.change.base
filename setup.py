@@ -32,6 +32,8 @@ setup(name='gs.site.change.base',
     zip_safe=True,
     install_requires=[
         'setuptools',
+        'gs.viewlet',
+        'gs.site.home',
         # -*- Extra requirements: -*-
     ],
     entry_points="""
