@@ -1,4 +1,6 @@
-<div id="gs-site-change-base-site-home-admin">
+<div id="gs-site-change-base-site-home-admin" 
+    class="ui-corner-all ui-widget-content"
+    style="padding: 1.385em;">
   <tal:block content="structure provider:groupserver.SiteAdminStuff">
     Site Administration Stuff
   </tal:block>
