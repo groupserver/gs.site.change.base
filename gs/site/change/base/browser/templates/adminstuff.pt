@@ -1,5 +1,4 @@
 <div id="gs-site-change-base-adminstuff">
-  <h2>Site Administration</h2>
   <tal:block repeat="viewlet options/viewlets"> 
     <tal:block content="structure viewlet/render">
       Some suff
