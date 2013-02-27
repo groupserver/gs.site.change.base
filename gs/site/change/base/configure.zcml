@@ -55,7 +55,8 @@
   <!--  #gs-site-change-base-adminstuff-adminlinks: A viewlet.
     -   Then the fruity layer of a viewlet that slots into the above 
     -   viewlet manage and, in turn, will hold… -->
-  <browser:viewlet name="gs-site-change-base-adminstuff-adminlinks"
+  <browser:viewlet 
+    name="gs-site-change-base-adminstuff-adminlinks"
     manager=".interfaces.ISiteAdminStuff"
     template="browser/templates/adminlinks.pt"
     class="gs.viewlet.viewlet.SiteViewlet"
@@ -76,11 +77,11 @@
   <!-- Finally, the viewlet for the site homepage. -->
   <browser:viewlet 
     name="gs-site-change-base-site-home-admin"
-    manager="gs.site.home.interfaces.ISiteHomeLeftColumn"
+    manager="gs.site.home.interfaces.ISiteHomeSecondary"
     template="browser/templates/sitehomeadmin.pt"
     class="gs.viewlet.viewlet.SiteViewlet"
     permission="zope2.ManageProperties"
-    weight="7"
+    weight="20"
     title="Administrator Tasks" />
 
 </configure>
