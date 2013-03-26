@@ -33,7 +33,7 @@ setup(name='gs.site.change.base',
     install_requires=[
         'setuptools',
         'zope.viewlet',
-        'gs.content.layout'
+        'gs.content.layout',
         'gs.viewlet',
         'gs.site.home',
     ],
