@@ -1,4 +1,4 @@
-# coding=utf-8
+# -*- coding: utf-8 -*-
 import os
 from setuptools import setup, find_packages
 from version import get_version
@@ -32,11 +32,11 @@ setup(name='gs.site.change.base',
     zip_safe=True,
     install_requires=[
         'setuptools',
+        'zope.viewlet',
+        'gs.content.layout'
         'gs.viewlet',
         'gs.site.home',
-        # -*- Extra requirements: -*-
     ],
     entry_points="""
     # -*- Entry points: -*-
     """,)
-
