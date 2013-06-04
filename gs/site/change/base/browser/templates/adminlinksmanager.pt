@@ -1,4 +1,5 @@
-<ul id="gs-site-change-base-adminstuff-adminlinks-manager">
+<ul id="gs-site-change-base-adminstuff-adminlinks-manager"
+    role="navigation">
   <tal:block repeat="viewlet options/viewlets">
     <tal:block content="structure viewlet/render">
       Some links
