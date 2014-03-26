@@ -1,7 +1,6 @@
 <div id="gs-site-change-base-adminstuff-adminlinks">
-  <tal:block 
+  <tal:block
     content="structure provider:groupserver.SiteAdminLinks">
     Stuff
   </tal:block>
 </div><!--gs-site-change-base-adminstuff-adminlinks-->
-
