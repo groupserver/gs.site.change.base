@@ -7,30 +7,30 @@ The core site administration system
 
 :Author: `Michael JasonSmith`_
 :Contact: Michael JasonSmith <mpj17@onlinegroups.net>
-:Date: 2013-03-26
+:Date: 2014-10-24
 :Organization: `GroupServer.org`_
 :Copyright: This document is licensed under a
-  `Creative Commons Attribution-Share Alike 3.0 New Zealand License`_
-  by `OnlineGroups.Net`_.
+  `Creative Commons Attribution-Share Alike 4.0 International License`_
+  by `OnlineGroups.net`_.
 
 Introduction
 ============
 
-The ``gs.site.change.base`` egg provides the core code for the pages that
-change a site. It provides to main interfaces:
+The ``gs.site.change.base`` egg provides the core code for the
+pages that change a site. It provides to main interfaces:
 
 #.  The `Site Administration area`_ on the site homepage, and
-#.  The *Change Site* page, which contains exactly the same things as the
-    Change Site page. For historical reasons the Change Site page is
-    located at ``/admindivision``.
+#.  The *Change Site* page, which contains exactly the same
+    things as the Change Site page. For historical reasons the
+    Change Site page is located at ``/admindivision``.
 
 Site Administration Area
 ========================
 
-The site administration area provides many viewlet managers to display
-links and notifications to the site administrator. Both the Change Site
-page and the Site Administration viewlet the structure, which is is as
-follows::
+The site administration area provides many viewlet managers to
+display links and notifications to the site administrator. Both
+the Change Site page and the Site Administration viewlet the
+structure, which is is as follows::
 
   ┌─ #gs-site-change-base-adminstuff ────────────────────────────┐
   │                                                              │
@@ -53,8 +53,10 @@ follows::
 Examples
 --------
 
-A simple link to an administration page would have a ZCML declaration
-similar to the following::
+A simple link to an administration page would have a ZCML
+declaration similar to the following:
+
+.. code-highlight: xml
 
   <browser:viewlet
     name="gs-some-admin-product-link"
@@ -63,20 +65,22 @@ similar to the following::
     permission="zope2.ManageProperties"
     weight="20"/>
 
-The page-template itself would be very simple::
+The page-template itself would be very simple:
+
+.. code-highlight: xml
 
   <li id="gs-some-admin-product-link">
-    <a href="/gs-some-admin-product.html">A link to some admin product</a></li>
+    <a href="/gs-some-admin-product.html">A link to a admin page</a></li>
 
 Resources
 =========
 
-- Code repository: https://source.iopen.net/groupserver/site.change.base/
+- Code repository: https://github.com/groupserver/site.change.base/
 - Questions and comments to http://groupserver.org/groups/development/
 - Report bugs at https://redmine.iopen.net/projects/groupserver/
 
 .. _GroupServer.org: http://groupserver.org/
 .. _Michael JasonSmith: http://groupserver.org/p/mpj17
-.. _Creative Commons Attribution-Share Alike 3.0 New Zealand License:
-   http://creativecommons.org/licenses/by-sa/3.0/nz/
+..  _Creative Commons Attribution-Share Alike 4.0 International License:
+    http://creativecommons.org/licenses/by-sa/4.0/
 .. _GroupServer: http://groupserver.org/
