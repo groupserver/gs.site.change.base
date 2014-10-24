@@ -1,5 +1,5 @@
-<ul id="gs-site-change-base-adminstuff-adminlinks-manager"
-    role="navigation">
+<ul xmlns:tal="http://xml.zope.org/namespaces/tal"
+     id="gs-site-change-base-adminstuff-adminlinks-manager">
   <tal:block repeat="viewlet options/viewlets">
     <tal:block content="structure viewlet/render">
       Some links

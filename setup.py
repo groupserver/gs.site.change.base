@@ -54,6 +54,7 @@ setup(
     install_requires=[
         'setuptools',
         'zope.browserpage',
+        'zope.i18n',
         'zope.tal',
         'zope.tales',
         'zope.viewlet',
