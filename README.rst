@@ -75,7 +75,7 @@ The page-template itself would be very simple:
 Resources
 =========
 
-- Code repository: https://github.com/groupserver/site.change.base/
+- Code repository: https://github.com/groupserver/gs.site.change.base/
 - Questions and comments to http://groupserver.org/groups/development/
 - Report bugs at https://redmine.iopen.net/projects/groupserver/
 
@@ -83,4 +83,5 @@ Resources
 .. _Michael JasonSmith: http://groupserver.org/p/mpj17
 ..  _Creative Commons Attribution-Share Alike 4.0 International License:
     http://creativecommons.org/licenses/by-sa/4.0/
+.. _onlinegroups.net: https://onlinegroups.net/
 .. _GroupServer: http://groupserver.org/
