@@ -1,14 +1,22 @@
-<html metal:use-macro="context/@@groupserver_layout/page">
+<html xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      i18n:domain="gs.site.change.base"
+      metal:use-macro="context/@@groupserver_layout/page">
   <head>
-    <title metal:fill-slot="title">
-      Change Site:
-      <span tal:replace="view/siteInfo/name"/>
+    <title metal:fill-slot="title"
+           i18n:translate="admin-page-title">
+      Administer:
+      <span i18n:name="siteName" tal:replace="view/siteInfo/name"/>
     </title>
   </head>
   <body>
     <tal:block metal:fill-slot="contextnavigation">&#160;</tal:block>
     <div id="gs-site-change" metal:fill-slot="body">
-      <h1>Administer <span tal:replace="view/siteInfo/name"/></h1>
+      <h1 i18n:translate="admin-page-heading">
+        Administer <span class="site" i18n:name="siteName"
+                         tal:content="view/siteInfo/name">This site</span>
+      </h1>
       <tal:block
         content="structure provider:groupserver.SiteAdminStuff">
         Stuff

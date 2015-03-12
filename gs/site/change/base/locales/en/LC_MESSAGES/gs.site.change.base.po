@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2014-10-24 19:09+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"POT-Creation-Date: 2015-03-12 21:14+0000\n"
+"PO-Revision-Date: 2015-03-12 14:15-0700\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -14,7 +14,18 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: DOMAIN\n"
 
+#. Default: "Admin"
 #: ./browser/templates/sitehomeadmin.pt:6
-msgid "Admin"
-msgstr ""
+msgid "admin-area-title"
+msgstr "Admin"
+
+#. Default: "Administer ${siteName}"
+#: ./browser/templates/admindivision.pt:17
+msgid "admin-page-heading"
+msgstr "Administer ${siteName}"
+
+#. Default: "Administer: ${siteName}"
+#: ./browser/templates/admindivision.pt:10
+msgid "admin-page-title"
+msgstr "Administer: ${siteName}"
 

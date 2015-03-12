@@ -4,7 +4,7 @@
      id="gs-site-change-base-site-home-admin" role="region"
      aria-labelledby="gs-site-change-base-site-home-admin-h">
   <h3 id="gs-site-change-base-site-home-admin-h"
-      i18n:translate="">Admin</h3>
+      i18n:translate="admin-area-title">Admin</h3>
   <tal:block content="structure provider:groupserver.SiteAdminStuff">
     Site Administration Stuff
   </tal:block>

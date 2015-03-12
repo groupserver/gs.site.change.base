@@ -1,0 +1,9 @@
+[main]
+host = https://www.transifex.com
+
+[gs-site-change-base.gs-site-change-base-pot]
+file_filter = gs/site/change/base/locales/<lang>/LC_MESSAGES/gs.site.change.base.po
+source_file = gs/site/change/base/locales/en/LC_MESSAGES/gs.site.change.base.po
+source_lang = en
+type = PO
+
