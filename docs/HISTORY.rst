@@ -1,6 +1,15 @@
 Changelog
 =========
 
+2.1.1 (2015-03-12)
+------------------
+
+* Adding support for Transifex_
+* [FR] Adding a French translation
+
+.. _Transifex:
+   https://www.transifex.com/projects/p/gs-site-change-base/
+
 2.1.0 (2014-10-24)
 ------------------
 
@@ -45,3 +54,5 @@ Changelog
 ------------------
 
 * Initial version
+
+..  LocalWords:  Changelog Transifex
