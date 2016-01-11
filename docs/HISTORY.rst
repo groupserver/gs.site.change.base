@@ -1,6 +1,11 @@
 Changelog
 =========
 
+2.1.2 (2016-01-11)
+------------------
+
+* [DE] Adding a German translation, thanks to Alice
+
 2.1.1 (2015-03-12)
 ------------------
 
